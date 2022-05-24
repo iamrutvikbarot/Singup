@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SING UPFORM</title>
+    <link rel="stylesheet" href="my.css">
+
+</head>
+
+<body>
+    <h1>Welcome To India</h1>
+    <form name="myForm" onsubmit="return (validateForm())" method="post">
+        <div class="form">
+
+            <table class="ok">
+                <tr>
+                    <td>Firstname :
+                    <td><input type="text" name="Fname"><b><span id="ferror"></span></b>
+                <tr>
+                    <td>lastname :</td>
+                    <td><input type="text" name="Lname"><b><span id="ferror"></span></b>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Date of birth :</td>
+                    <td><input type="date" name="Date of birth">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Email :</td>
+                    <td><input type="Email" name="Email" placeholder="Name@gmail.com"><b><span
+                                class="ferror"></span></b>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Mobile Number : </td>
+                    <td><input type="number" name="Mobile Numbe" placeholder="xxxxxxxxxx"><b><span
+                                class="ferror"></span></b>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Gender : </td>
+                    <td><input type="radio" name="Gender" id="Male"> <label for="Male">Male</label>
+                        <input type="radio" name="Gender" id="Female"> <label for="Female">Female</label>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Address : </td>
+                    <td><textarea name="Address" cols="30" rows="5"></textarea>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Your city Name : </td>
+                    <td><input type="text" name="cname">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Pin code : </td>
+                    <td><input type="number" name="pin code" placeholder="xxxxxx"><b><span class="ferror"></span></b>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>State : </td>
+                    <td> <input type="text" name="state">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Country : </td>
+                    <td> <input type="text" name="Country" placeholder="India">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Hobbies: </td>
+                    <td><input type="checkbox" class="hobi" name="SING"> <label for="SING"> singing</label>
+                        <input type="checkbox" class="hobi" name="Driving"> <label for="Driving"> Driving</label>
+                        <input type="checkbox" class="hobi" name="Dancing"> <label for="Dancing"> Dancing</label>
+                        <input type="checkbox" class="hobi" name="Reading"> <label for="Reading"> Reading</label>
+                        <input type="checkbox" class="hobi" name="Cricket"> <label for="Cricket"> Cricket</label>
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td><input type="submit" class="btn" name="submit" value="Submit">
+                    </td>
+                    <td><input type="reset" class="btn" name="reset" value="Reset">
+                    </td>
+
+                </tr>
+
+
+
+
+
+            </table>
+
+
+            <!-- </form> -->
+        </div>
+</body>
+<!-- <script src="new.js"></script> -->
+<script>
+
+
+
+
+
+    function validateForm() {
+
+        if (document.myForm.Fname.value <0) {
+            document.getElementById("ferror").innerHTML = "* Please provide your name!";
+
+            return false;
+        } else {
+            document.getElementById("ferror").innerHTML = "";
+
+        }
+
+
+        if (document.myForm.Lname.value == "") {
+            document.getElementById("ferror").innerHTML = "* Please provide your name!";
+
+            return false;
+        } else {
+            document.getElementById("ferror").innerHTML = "";
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+</script>
+
+
+
+
+</html>
